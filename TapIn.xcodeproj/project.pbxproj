@@ -7,21 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B5C0AF70E7EC57C130D8BDF /* libPods-TapIn.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B3560B928F7F264616FE0415 /* libPods-TapIn.a */; };
+		F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624501F1D512B009B8E16 /* SignUpViewController.swift */; };
+		F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */; };
+		F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624541F1D5236009B8E16 /* HomeViewController.swift */; };
 		F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422A1F1D4775000EF145 /* AppDelegate.swift */; };
-		F0DB422D1F1D4775000EF145 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422C1F1D4775000EF145 /* ViewController.swift */; };
+		F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422C1F1D4775000EF145 /* LoginViewController.swift */; };
 		F0DB42301F1D4775000EF145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DB422E1F1D4775000EF145 /* Main.storyboard */; };
 		F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42311F1D4775000EF145 /* Assets.xcassets */; };
 		F0DB42351F1D4775000EF145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */; };
+		F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.release.xcconfig"; sourceTree = "<group>"; };
+		5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.debug.xcconfig"; sourceTree = "<group>"; };
+		B3560B928F7F264616FE0415 /* libPods-TapIn.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TapIn.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F07624501F1D512B009B8E16 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		F07624541F1D5236009B8E16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F0DB42271F1D4775000EF145 /* TapIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0DB422A1F1D4775000EF145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F0DB422C1F1D4775000EF145 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F0DB422C1F1D4775000EF145 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F0DB422F1F1D4775000EF145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F0DB42311F1D4775000EF145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0DB42341F1D4775000EF145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0DB42361F1D4775000EF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B5C0AF70E7EC57C130D8BDF /* libPods-TapIn.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		10910F0F8E067BB6BBA24C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */,
+				3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36BEBFF9748A34F755C055BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B3560B928F7F264616FE0415 /* libPods-TapIn.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F0DB421E1F1D4775000EF145 = {
 			isa = PBXGroup;
 			children = (
 				F0DB42291F1D4775000EF145 /* TapIn */,
 				F0DB42281F1D4775000EF145 /* Products */,
+				10910F0F8E067BB6BBA24C57 /* Pods */,
+				36BEBFF9748A34F755C055BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,11 +87,15 @@
 			isa = PBXGroup;
 			children = (
 				F0DB422A1F1D4775000EF145 /* AppDelegate.swift */,
-				F0DB422C1F1D4775000EF145 /* ViewController.swift */,
+				F07624541F1D5236009B8E16 /* HomeViewController.swift */,
+				F0DB422C1F1D4775000EF145 /* LoginViewController.swift */,
+				F07624501F1D512B009B8E16 /* SignUpViewController.swift */,
+				F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */,
 				F0DB422E1F1D4775000EF145 /* Main.storyboard */,
 				F0DB42311F1D4775000EF145 /* Assets.xcassets */,
 				F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */,
 				F0DB42361F1D4775000EF145 /* Info.plist */,
+				F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */,
 			);
 			path = TapIn;
 			sourceTree = "<group>";
@@ -71,9 +107,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F0DB42391F1D4775000EF145 /* Build configuration list for PBXNativeTarget "TapIn" */;
 			buildPhases = (
+				E3453531E0D52B668AF828F1 /* [CP] Check Pods Manifest.lock */,
 				F0DB42231F1D4775000EF145 /* Sources */,
 				F0DB42241F1D4775000EF145 /* Frameworks */,
 				F0DB42251F1D4775000EF145 /* Resources */,
+				99FC027A8A862A9AE8CE0D72 /* [CP] Embed Pods Frameworks */,
+				C1DFA0F3010F4EB1E38D91E8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,19 +165,71 @@
 			files = (
 				F0DB42351F1D4775000EF145 /* LaunchScreen.storyboard in Resources */,
 				F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */,
+				F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */,
 				F0DB42301F1D4775000EF145 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		99FC027A8A862A9AE8CE0D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TapIn/Pods-TapIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DFA0F3010F4EB1E38D91E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TapIn/Pods-TapIn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3453531E0D52B668AF828F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F0DB42231F1D4775000EF145 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0DB422D1F1D4775000EF145 /* ViewController.swift in Sources */,
+				F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */,
+				F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */,
+				F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */,
 				F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */,
+				F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +352,7 @@
 		};
 		F0DB423A1F1D4775000EF145 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P877U5SDZ6;
@@ -274,6 +366,7 @@
 		};
 		F0DB423B1F1D4775000EF145 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = P877U5SDZ6;
@@ -304,6 +397,7 @@
 				F0DB423B1F1D4775000EF145 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
