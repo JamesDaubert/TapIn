@@ -1,0 +1,457 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DAAE5D63A0C7054678A3D1FF /* Pods_TapIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */; };
+		F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624501F1D512B009B8E16 /* SignUpViewController.swift */; };
+		F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */; };
+		F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624541F1D5236009B8E16 /* HomeViewController.swift */; };
+		F0A60AA81F23EA5900B19EE9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */; };
+		F0A60AAA1F23EB8E00B19EE9 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A60AA91F23EB8E00B19EE9 /* Interactor.swift */; };
+		F0A60AAC1F23EBCF00B19EE9 /* MenuHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A60AAB1F23EBCF00B19EE9 /* MenuHelper.swift */; };
+		F0D45B7E1F2633CC00B61029 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D45B7D1F2633CC00B61029 /* MapKit.framework */; };
+		F0D45B801F26360500B61029 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B7F1F26360500B61029 /* MapViewController.swift */; };
+		F0D45B821F26418C00B61029 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */; };
+		F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422A1F1D4775000EF145 /* AppDelegate.swift */; };
+		F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422C1F1D4775000EF145 /* LoginViewController.swift */; };
+		F0DB42301F1D4775000EF145 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DB422E1F1D4775000EF145 /* Main.storyboard */; };
+		F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42311F1D4775000EF145 /* Assets.xcassets */; };
+		F0DB42351F1D4775000EF145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */; };
+		F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.release.xcconfig"; sourceTree = "<group>"; };
+		4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.debug.xcconfig"; sourceTree = "<group>"; };
+		F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
+		F07624501F1D512B009B8E16 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		F07624541F1D5236009B8E16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapIn.entitlements; sourceTree = "<group>"; };
+		F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F0A60AA91F23EB8E00B19EE9 /* Interactor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		F0A60AAB1F23EBCF00B19EE9 /* MenuHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuHelper.swift; sourceTree = "<group>"; };
+		F0D45B7D1F2633CC00B61029 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		F0D45B7F1F26360500B61029 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
+		F0DB42271F1D4775000EF145 /* TapIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0DB422A1F1D4775000EF145 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F0DB422C1F1D4775000EF145 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		F0DB422F1F1D4775000EF145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F0DB42311F1D4775000EF145 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F0DB42341F1D4775000EF145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F0DB42361F1D4775000EF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F0DB42241F1D4775000EF145 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0D45B7E1F2633CC00B61029 /* MapKit.framework in Frameworks */,
+				DAAE5D63A0C7054678A3D1FF /* Pods_TapIn.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		10910F0F8E067BB6BBA24C57 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */,
+				3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36BEBFF9748A34F755C055BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0D45B7D1F2633CC00B61029 /* MapKit.framework */,
+				4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F0DB421E1F1D4775000EF145 = {
+			isa = PBXGroup;
+			children = (
+				F0DB42291F1D4775000EF145 /* TapIn */,
+				F0DB42281F1D4775000EF145 /* Products */,
+				10910F0F8E067BB6BBA24C57 /* Pods */,
+				36BEBFF9748A34F755C055BA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F0DB42281F1D4775000EF145 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F0DB42271F1D4775000EF145 /* TapIn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F0DB42291F1D4775000EF145 /* TapIn */ = {
+			isa = PBXGroup;
+			children = (
+				F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */,
+				F0DB422A1F1D4775000EF145 /* AppDelegate.swift */,
+				F0A60AA91F23EB8E00B19EE9 /* Interactor.swift */,
+				F0A60AAB1F23EBCF00B19EE9 /* MenuHelper.swift */,
+				F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */,
+				F0D45B7F1F26360500B61029 /* MapViewController.swift */,
+				F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */,
+				F07624541F1D5236009B8E16 /* HomeViewController.swift */,
+				F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */,
+				F0DB422C1F1D4775000EF145 /* LoginViewController.swift */,
+				F07624501F1D512B009B8E16 /* SignUpViewController.swift */,
+				F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */,
+				F0DB422E1F1D4775000EF145 /* Main.storyboard */,
+				F0DB42311F1D4775000EF145 /* Assets.xcassets */,
+				F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */,
+				F0DB42361F1D4775000EF145 /* Info.plist */,
+				F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */,
+			);
+			path = TapIn;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F0DB42261F1D4775000EF145 /* TapIn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0DB42391F1D4775000EF145 /* Build configuration list for PBXNativeTarget "TapIn" */;
+			buildPhases = (
+				E3453531E0D52B668AF828F1 /* [CP] Check Pods Manifest.lock */,
+				F0DB42231F1D4775000EF145 /* Sources */,
+				F0DB42241F1D4775000EF145 /* Frameworks */,
+				F0DB42251F1D4775000EF145 /* Resources */,
+				99FC027A8A862A9AE8CE0D72 /* [CP] Embed Pods Frameworks */,
+				C1DFA0F3010F4EB1E38D91E8 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TapIn;
+			productName = TapIn;
+			productReference = F0DB42271F1D4775000EF145 /* TapIn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F0DB421F1F1D4775000EF145 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "James Daubert";
+				TargetAttributes = {
+					F0DB42261F1D4775000EF145 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = P877U5SDZ6;
+						LastSwiftMigration = 0830;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 0;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = F0DB42221F1D4775000EF145 /* Build configuration list for PBXProject "TapIn" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F0DB421E1F1D4775000EF145;
+			productRefGroup = F0DB42281F1D4775000EF145 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F0DB42261F1D4775000EF145 /* TapIn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F0DB42251F1D4775000EF145 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DB42351F1D4775000EF145 /* LaunchScreen.storyboard in Resources */,
+				F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */,
+				F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */,
+				F0DB42301F1D4775000EF145 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		99FC027A8A862A9AE8CE0D72 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TapIn/Pods-TapIn-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1DFA0F3010F4EB1E38D91E8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TapIn/Pods-TapIn-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E3453531E0D52B668AF828F1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F0DB42231F1D4775000EF145 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A60AAC1F23EBCF00B19EE9 /* MenuHelper.swift in Sources */,
+				F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */,
+				F0A60AA81F23EA5900B19EE9 /* MenuViewController.swift in Sources */,
+				F0D45B801F26360500B61029 /* MapViewController.swift in Sources */,
+				F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */,
+				F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */,
+				F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */,
+				F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */,
+				F0D45B821F26418C00B61029 /* LocationSearchTableViewController.swift in Sources */,
+				F0A60AAA1F23EB8E00B19EE9 /* Interactor.swift in Sources */,
+				F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F0DB422E1F1D4775000EF145 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0DB422F1F1D4775000EF145 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F0DB42341F1D4775000EF145 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F0DB42371F1D4775000EF145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F0DB42381F1D4775000EF145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_GENERATE_TEST_COVERAGE_FILES = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MACH_O_TYPE = mh_execute;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F0DB423A1F1D4775000EF145 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P877U5SDZ6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TapIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JamesDaubert.TapIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		F0DB423B1F1D4775000EF145 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = P877U5SDZ6;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = TapIn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = JamesDaubert.TapIn;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F0DB42221F1D4775000EF145 /* Build configuration list for PBXProject "TapIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DB42371F1D4775000EF145 /* Debug */,
+				F0DB42381F1D4775000EF145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0DB42391F1D4775000EF145 /* Build configuration list for PBXNativeTarget "TapIn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DB423A1F1D4775000EF145 /* Debug */,
+				F0DB423B1F1D4775000EF145 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F0DB421F1F1D4775000EF145 /* Project object */;
+}
