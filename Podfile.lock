@@ -26,12 +26,16 @@ PODS:
   - GoogleSymbolUtilities (1.1.2)
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
+  - ObjectMapper (1.5.0)
   - SideMenu (2.0.3)
+  - UberRides (0.5.2):
+    - ObjectMapper (~> 1.0)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - SideMenu
+  - UberRides
 
 SPEC CHECKSUMS:
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
@@ -43,8 +47,10 @@ SPEC CHECKSUMS:
   GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
+  ObjectMapper: 386645adca9d9d23b95eda43090b09d66444cf14
   SideMenu: f179260f85c68ed9b283b4a505600f2e6cbdfb10
+  UberRides: 31c962f5b150fac726789e4de80f5fd468201dd5
 
-PODFILE CHECKSUM: a3d17685ec5231cf607c7086a58538173b746cc1
+PODFILE CHECKSUM: 70d60c882b0441d16d64f70e959b83b3f38ad51e
 
 COCOAPODS: 1.0.1

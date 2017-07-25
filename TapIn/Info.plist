@@ -61,5 +61,48 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+    <key>LSApplicationQueriesSchemes</key>
+    <array>
+        <string>uber</string>
+        <string>uberauth</string>
+    </array>
+    <key>UberClientID</key>
+    <string>aLOGeirPLdWKbBSUfH5nXeK1m0TQpHG5</string>
+    <key>UberDisplayName</key>
+    <string>Tap In</string>
+    <key>UberCallbackURIs</key>
+    <array>
+        <dict>
+            <key>UberCallbackURIType</key>
+            <string>Implicit</string>
+            <key>URIString</key>
+            <string>https://localhost/</string>
+        </dict>
+        <dict>
+            <key>UberCallbackURIType</key>
+            <string>AuthorizationCode</string>
+            <key>URIString</key>
+            <string>https://localhost/</string>
+        </dict>
+        <dict>
+            <key>UberCallbackURIType</key>
+            <string>Native</string>
+            <key>URIString</key>
+            <string>sdkexample://login</string>
+        </dict>    
+    </array>
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleTypeRole</key>
+            <string>Editor</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>sdkexample</string>
+            </array>
+        </dict>
+    </array>
+    <key>UberServerToken</key>
+    <string>DD6A2P2GBEtXtlsjGm7weOdrFwVRfEEqSj10lgSQ</string>
 </dict>
 </plist>

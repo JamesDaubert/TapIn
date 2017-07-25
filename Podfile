@@ -6,6 +6,7 @@ target 'TapIn' do
 	pod ‘Firebase/Core’
 	pod ‘Firebase/Auth’
 	pod ’SideMenu’
+	pod ‘UberRides’
  
 end
 post_install do |installer|
