@@ -65,10 +65,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         }
         
     }
-    var uberURL = "uber://"
-    func openUber(url: String) {
-        
-    }
     
 }
 
