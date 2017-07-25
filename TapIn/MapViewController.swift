@@ -101,13 +101,13 @@ extension MapViewController {
         pinView = MKPinAnnotationView(annotation: annotation, reuseIdentifier: reuseId)
         pinView?.pinTintColor = UIColor.orange
         pinView?.canShowCallout = true
-        let smallSquare = CGSize(width: 30, height: 30)
-        let button = UIButton()
-        button.sizeThatFits(smallSquare)
-        let car = UIImage(named: "car")
-        button.setBackgroundImage(car, for: .normal)
-        button.addTarget(self, action: "openUber", for: .touchUpInside)
-        pinView?.leftCalloutAccessoryView = button
+//        let smallSquare = CGSize(width: 30, height: 30)
+//        let button = UIButton()
+//        button.sizeThatFits(smallSquare)
+//        let car = UIImage(named: "car")
+//        button.setBackgroundImage(car, for: .normal)
+//        button.addTarget(self, action: "openUber", for: .touchUpInside)
+//        pinView?.leftCalloutAccessoryView = button
         return pinView
     }
     
