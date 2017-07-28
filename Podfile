@@ -5,7 +5,7 @@ target 'TapIn' do
 	use_frameworks!
 	pod ‘Firebase/Core’
 	pod ‘Firebase/Auth’
-	pod ’SideMenu’
+	pod ‘Stripe’
 
 end
 post_install do |installer|

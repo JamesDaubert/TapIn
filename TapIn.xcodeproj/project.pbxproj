@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		DAAE5D63A0C7054678A3D1FF /* Pods_TapIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */; };
+		F0751D1C1F27FA8100B1AB36 /* CurrentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */; };
 		F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624501F1D512B009B8E16 /* SignUpViewController.swift */; };
 		F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */; };
 		F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624541F1D5236009B8E16 /* HomeViewController.swift */; };
-		F0A60AA81F23EA5900B19EE9 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */; };
 		F0D45B7E1F2633CC00B61029 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D45B7D1F2633CC00B61029 /* MapKit.framework */; };
 		F0D45B801F26360500B61029 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B7F1F26360500B61029 /* MapViewController.swift */; };
 		F0D45B821F26418C00B61029 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */; };
@@ -29,11 +29,11 @@
 		4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.debug.xcconfig"; sourceTree = "<group>"; };
 		F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
+		F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTabViewController.swift; sourceTree = "<group>"; };
 		F07624501F1D512B009B8E16 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		F07624541F1D5236009B8E16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapIn.entitlements; sourceTree = "<group>"; };
-		F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		F0D45B7D1F2633CC00B61029 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F0D45B7F1F26360500B61029 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
@@ -101,7 +101,7 @@
 			children = (
 				F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */,
 				F0DB422A1F1D4775000EF145 /* AppDelegate.swift */,
-				F0A60AA71F23EA5900B19EE9 /* MenuViewController.swift */,
+				F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */,
 				F0D45B7F1F26360500B61029 /* MapViewController.swift */,
 				F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */,
 				F07624541F1D5236009B8E16 /* HomeViewController.swift */,
@@ -253,9 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */,
-				F0A60AA81F23EA5900B19EE9 /* MenuViewController.swift in Sources */,
 				F0D45B801F26360500B61029 /* MapViewController.swift in Sources */,
 				F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */,
+				F0751D1C1F27FA8100B1AB36 /* CurrentTabViewController.swift in Sources */,
 				F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */,
 				F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */,
 				F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */,

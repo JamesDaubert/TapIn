@@ -10,6 +10,7 @@ import Firebase
 import FirebaseAuth
 import UIKit
 import SideMenu
+
 class HomeViewController: UIViewController {
     
     //Menu variables
@@ -19,7 +20,9 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         }
-    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -39,18 +42,5 @@ class HomeViewController: UIViewController {
         }
         
     }
-    
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if let destinationVC = segue.destination as? MenuViewController {
-//            destinationVC.transitioningDelegate = self
-//        }
-//    }
 }
-
-//extension HomeViewController: UIViewControllerTransitioningDelegate {
-//    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-//        PresentMenuAnimator.
-//        return PresentMenuAnimator.
-//    }
-//}
 

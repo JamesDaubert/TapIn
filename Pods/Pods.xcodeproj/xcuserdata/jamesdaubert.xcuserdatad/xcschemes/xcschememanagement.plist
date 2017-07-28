@@ -9,7 +9,12 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>SideMenu.xcscheme</key>
+		<key>Stripe-Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Stripe.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +22,17 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>64EB4A178C445516D8380BDC286B7D81</key>
+		<key>8E35852D12C8C6C013730A84C8F1F263</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>D4F0B0B60E6B499FAFBEC531E76B53A6</key>
+		<key>AA447545127CA83E1F2A7D4161B7524C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>B3B26682F7A836C2DEA9DB560580CC9E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SideMenu
 
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)

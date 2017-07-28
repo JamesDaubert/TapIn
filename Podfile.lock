@@ -26,12 +26,12 @@ PODS:
   - GoogleSymbolUtilities (1.1.2)
   - GoogleUtilities (1.3.2):
     - GoogleSymbolUtilities (~> 1.1)
-  - SideMenu (2.0.3)
+  - Stripe (8.0.7)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
-  - SideMenu
+  - Stripe
 
 SPEC CHECKSUMS:
   Firebase: 3875e140d77c7572c6d4852faf94144ffcdb0704
@@ -43,8 +43,8 @@ SPEC CHECKSUMS:
   GoogleNetworkingUtilities: 3edd3a8161347494f2da60ea0deddc8a472d94cb
   GoogleSymbolUtilities: 631ee17048aa5e9ab133470d768ea997a5ef9b96
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
-  SideMenu: f179260f85c68ed9b283b4a505600f2e6cbdfb10
+  Stripe: 2bb9646115745d0ee8c7799e6872c57ba5dc6cc5
 
-PODFILE CHECKSUM: 4c3eb21eef6fc8c43e74cfb64147ed4c4d95bdf2
+PODFILE CHECKSUM: 1af6a47c4da21deb47b106f146029a0cd867d6b0
 
 COCOAPODS: 1.0.1
