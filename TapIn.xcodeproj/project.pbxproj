@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		DAAE5D63A0C7054678A3D1FF /* Pods_TapIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */; settings = {ATTRIBUTES = (Required, ); }; };
-		F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */; };
+		F00BC9781F2E45AD009BFCE2 /* EmailSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00BC9771F2E45AD009BFCE2 /* EmailSignUpViewController.swift */; };
+		F00BC97A1F2E832A009BFCE2 /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F00BC9791F2E832A009BFCE2 /* TabViewController.swift */; };
 		F0751D1C1F27FA8100B1AB36 /* CurrentTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */; };
 		F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624501F1D512B009B8E16 /* SignUpViewController.swift */; };
 		F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */; };
 		F07624551F1D5236009B8E16 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F07624541F1D5236009B8E16 /* HomeViewController.swift */; };
-		F0D45B7E1F2633CC00B61029 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0D45B7D1F2633CC00B61029 /* MapKit.framework */; };
 		F0D45B801F26360500B61029 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B7F1F26360500B61029 /* MapViewController.swift */; };
 		F0D45B821F26418C00B61029 /* LocationSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */; };
 		F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0DB422A1F1D4775000EF145 /* AppDelegate.swift */; };
@@ -22,19 +22,20 @@
 		F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42311F1D4775000EF145 /* Assets.xcassets */; };
 		F0DB42351F1D4775000EF145 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */; };
 		F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */; };
+		F0E8EEF11F2B7D75002EBAAE /* backend.rb in Resources */ = {isa = PBXBuildFile; fileRef = F0E8EEF01F2B7D75002EBAAE /* backend.rb */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.release.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.release.xcconfig"; sourceTree = "<group>"; };
 		4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TapIn.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TapIn.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TapIn/Pods-TapIn.debug.xcconfig"; sourceTree = "<group>"; };
-		F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentMenuAnimator.swift; sourceTree = "<group>"; };
+		F00BC9771F2E45AD009BFCE2 /* EmailSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailSignUpViewController.swift; sourceTree = "<group>"; };
+		F00BC9791F2E832A009BFCE2 /* TabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentTabViewController.swift; sourceTree = "<group>"; };
 		F07624501F1D512B009B8E16 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
 		F07624541F1D5236009B8E16 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TapIn.entitlements; sourceTree = "<group>"; };
-		F0D45B7D1F2633CC00B61029 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F0D45B7F1F26360500B61029 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationSearchTableViewController.swift; sourceTree = "<group>"; };
 		F0DB42271F1D4775000EF145 /* TapIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TapIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +46,7 @@
 		F0DB42341F1D4775000EF145 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0DB42361F1D4775000EF145 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F0E8EEF01F2B7D75002EBAAE /* backend.rb */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.ruby; path = backend.rb; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +54,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0D45B7E1F2633CC00B61029 /* MapKit.framework in Frameworks */,
 				DAAE5D63A0C7054678A3D1FF /* Pods_TapIn.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -72,7 +73,6 @@
 		36BEBFF9748A34F755C055BA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0D45B7D1F2633CC00B61029 /* MapKit.framework */,
 				4F3AFE25B0FDF132D0864916 /* Pods_TapIn.framework */,
 			);
 			name = Frameworks;
@@ -99,21 +99,23 @@
 		F0DB42291F1D4775000EF145 /* TapIn */ = {
 			isa = PBXGroup;
 			children = (
-				F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */,
 				F0DB422A1F1D4775000EF145 /* AppDelegate.swift */,
 				F0751D1B1F27FA8100B1AB36 /* CurrentTabViewController.swift */,
 				F0D45B7F1F26360500B61029 /* MapViewController.swift */,
 				F0D45B811F26418C00B61029 /* LocationSearchTableViewController.swift */,
 				F07624541F1D5236009B8E16 /* HomeViewController.swift */,
-				F05B850C1F23F8C3000CC4A8 /* PresentMenuAnimator.swift */,
 				F0DB422C1F1D4775000EF145 /* LoginViewController.swift */,
 				F07624501F1D512B009B8E16 /* SignUpViewController.swift */,
+				F00BC9771F2E45AD009BFCE2 /* EmailSignUpViewController.swift */,
+				F00BC9791F2E832A009BFCE2 /* TabViewController.swift */,
 				F07624521F1D5193009B8E16 /* ResetPasswordViewController.swift */,
 				F0DB422E1F1D4775000EF145 /* Main.storyboard */,
 				F0DB42311F1D4775000EF145 /* Assets.xcassets */,
 				F0DB42331F1D4775000EF145 /* LaunchScreen.storyboard */,
 				F0DB42361F1D4775000EF145 /* Info.plist */,
 				F0DB423C1F1D4D17000EF145 /* GoogleService-Info.plist */,
+				F0E8EEF01F2B7D75002EBAAE /* backend.rb */,
+				F0A60AA61F23E4EB00B19EE9 /* TapIn.entitlements */,
 			);
 			path = TapIn;
 			sourceTree = "<group>";
@@ -158,10 +160,10 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Keychain = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Maps.iOS = {
-								enabled = 1;
+								enabled = 0;
 							};
 						};
 					};
@@ -194,6 +196,7 @@
 				F0DB42321F1D4775000EF145 /* Assets.xcassets in Resources */,
 				F0DB423D1F1D4D17000EF145 /* GoogleService-Info.plist in Resources */,
 				F0DB42301F1D4775000EF145 /* Main.storyboard in Resources */,
+				F0E8EEF11F2B7D75002EBAAE /* backend.rb in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +245,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -256,10 +259,11 @@
 				F0D45B801F26360500B61029 /* MapViewController.swift in Sources */,
 				F07624511F1D512B009B8E16 /* SignUpViewController.swift in Sources */,
 				F0751D1C1F27FA8100B1AB36 /* CurrentTabViewController.swift in Sources */,
+				F00BC9781F2E45AD009BFCE2 /* EmailSignUpViewController.swift in Sources */,
 				F0DB422D1F1D4775000EF145 /* LoginViewController.swift in Sources */,
 				F0DB422B1F1D4775000EF145 /* AppDelegate.swift in Sources */,
-				F05B850D1F23F8C3000CC4A8 /* PresentMenuAnimator.swift in Sources */,
 				F0D45B821F26418C00B61029 /* LocationSearchTableViewController.swift in Sources */,
+				F00BC97A1F2E832A009BFCE2 /* TabViewController.swift in Sources */,
 				F07624531F1D5193009B8E16 /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -289,6 +293,7 @@
 		F0DB42371F1D4775000EF145 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -342,6 +347,7 @@
 		F0DB42381F1D4775000EF145 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -389,11 +395,25 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 5661113692FD52C1DD94E556 /* Pods-TapIn.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TapIn/TapIn.entitlements;
 				DEVELOPMENT_TEAM = P877U5SDZ6;
 				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Alamofire\"",
+					"\"${PODS_ROOT}/Stripe\"",
+					"\"${PODS_ROOT}/FirebaseAnalytics/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseAuth/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseCore/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/FirebaseInstanceID/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleInterchangeUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleNetworkingUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleSymbolUtilities/Frameworks/frameworks\"",
+					"\"${PODS_ROOT}/GoogleUtilities/Frameworks/frameworks\"",
+				);
 				INFOPLIST_FILE = TapIn/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -401,6 +421,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -408,9 +429,10 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3CC6C6D3AE9E79985A2F9939 /* Pods-TapIn.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TapIn/TapIn.entitlements;
 				DEVELOPMENT_TEAM = P877U5SDZ6;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = TapIn/Info.plist;
@@ -419,6 +441,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = JamesDaubert.TapIn;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};

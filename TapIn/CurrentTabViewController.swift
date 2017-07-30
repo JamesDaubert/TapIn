@@ -9,14 +9,14 @@
 import Foundation
 import UIKit
 
+
 class CurrentTabViewController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
-        
-    }
-    @IBOutlet weak var total: UILabel!
     
+    //MARK: Payment Initializers
+    
+    let pubKey = "pk_test_vOLquHuIJPHp0G71yoxi4LUG"
+    let backendBaseURL: String? = "https://tapinapp.herokuapp.com"
+    
+    
+
 }

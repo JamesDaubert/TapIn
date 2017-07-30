@@ -3,9 +3,13 @@ platform :ios, '9.0'
 target 'TapIn' do
 	
 	use_frameworks!
+	pod ‘FacebookCore’
+	pod ‘FacebookLogin’, git: ‘https://github.com/facebook/facebook-sdk-swift'
 	pod ‘Firebase/Core’
 	pod ‘Firebase/Auth’
-	pod ‘Stripe’
+	pod ‘Firebase/Database’
+	pod ‘GoogleSignIn’
+	
 
 end
 post_install do |installer|

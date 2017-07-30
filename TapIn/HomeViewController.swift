@@ -9,7 +9,8 @@
 import Firebase
 import FirebaseAuth
 import UIKit
-import SideMenu
+import FacebookLogin
+import FBSDKLoginKit
 
 class HomeViewController: UIViewController {
     
@@ -19,28 +20,35 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        checkIfUserIsLoggedIn()
+        
+       
+        
         }
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(true)
+    
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser == nil && FBSDKAccessToken.current() == nil  {
+            perform(#selector(handleLogout), with: nil, afterDelay: 0)
+        } 
+            
     }
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    @IBAction func logoutDo(_ sender: Any) {
+    func handleLogout() {
         
-        if FIRAuth.auth()?.currentUser != nil {
-            do{
-                try FIRAuth.auth()?.signOut()
-                let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Login")
-                
-                present(vc, animated: true, completion: nil)
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
+        do {
+            print("User logged out: ", FIRAuth.auth()?.currentUser ?? "user logged out")
+            try FIRAuth.auth()?.signOut()
+            
+        } catch let logoutError {
+            print(logoutError)
         }
-        
+        let loginController = LoginViewController()
+        present(loginController, animated: false, completion: nil)
     }
+    
+    @IBAction func logoutDo(_ sender: Any) {
+       handleLogout()
+    }
+    
 }
 
