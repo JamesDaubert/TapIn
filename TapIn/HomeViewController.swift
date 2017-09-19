@@ -19,12 +19,13 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        view.backgroundColor = .white
         checkIfUserIsLoggedIn()
         
        
         
         }
+    
     
     func checkIfUserIsLoggedIn() {
         if FIRAuth.auth()?.currentUser == nil && FBSDKAccessToken.current() == nil  {

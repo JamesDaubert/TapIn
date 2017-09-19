@@ -9,6 +9,8 @@ target 'TapIn' do
 	pod ‘Firebase/Auth’
 	pod ‘Firebase/Database’
 	pod ‘GoogleSignIn’
+	pod ‘Stripe’
+	pod ‘Alamofire’
 	
 
 end

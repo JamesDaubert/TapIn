@@ -74,6 +74,7 @@ class EmailSignUpViewController: UIViewController {
     let emailText: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
+        text.keyboardType = .emailAddress
         text.backgroundColor = UIColor.lightGray
         text.textColor = UIColor.red
         text.placeholder = "Email"
@@ -140,8 +141,12 @@ class EmailSignUpViewController: UIViewController {
                 print(error!)
                 return
             }
+            
+            guard let uid = user?.uid else {
+                return
+            }
             let ref = FIRDatabase.database().reference(fromURL: "https://tapin-a514d.firebaseio.com/")
-            let usersReference = ref.child("users")
+            let usersReference = ref.child("users").child(uid)
             let values = ["name": name, "email": email]
             usersReference.updateChildValues(values, withCompletionBlock: { (err, ref) in
                 if err != nil {
@@ -150,7 +155,7 @@ class EmailSignUpViewController: UIViewController {
                 }
                 print("Saved user successfully into Firebase DB")
             })
-            let homeVC = self.storyboard!.instantiateViewController(withIdentifier: "Tab")
+            let homeVC = HomeViewController()
             self.present(homeVC, animated: true, completion: nil)
             
 

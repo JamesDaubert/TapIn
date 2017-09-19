@@ -31,6 +31,13 @@ post '/ephemeral_keys' do
     key.to_json
 end
 
+token = params[:stripeToken]
+
+customer = Stripe::customer.create(
+                                   :email => "paying.user@example.com",
+                                   :source => token,
+                                   )
+
 post '/charge' do
     authenticate!
     # Get the credit card details submitted by the form
@@ -42,9 +49,8 @@ post '/charge' do
                                        :amount => params[:amount], # this number should be in cents
                                        :currency => "usd",
                                        :customer => @customer.id,
-                                       :source => source,
+                                       :source => token,
                                        :description => "Example Charge",
-                                       :shipping => params[:shipping],
                                        )
                                        rescue Stripe::StripeError => e
                                        status 402
@@ -54,6 +60,12 @@ post '/charge' do
     status 200
     return "Charge successfully created"
 end
+
+charge = Stripe::Charge.create(
+                               :amount => 1500, # $15.00 this time
+                               :currency => "usd",
+                               :customer => customer_id, # Previously stored, then retrieved
+                               )
 
 def authenticate!
     # This code simulates "loading the Stripe customer for your current session".

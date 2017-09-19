@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import CoreLocation
 import FBSDKCoreKit
+import Stripe
 
 
 @UIApplicationMain
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var locationManager: CLLocationManager?
+    var stripeConfig: STPPaymentConfiguration?
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -31,7 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         locationManager?.requestWhenInUseAuthorization()
         
         //Stripe
-        //STPPaymentConfiguration.shared().publishableKey = "pk_test_vOLquHuIJPHp0G71yoxi4LUG"
+        STPPaymentConfiguration.shared().publishableKey = "pk_test_vOLquHuIJPHp0G71yoxi4LUG"
+        stripeConfig = STPPaymentConfiguration.shared()
         
         //FB
         FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
@@ -39,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         //GOOGLE
 //        GIDSignIn.sharedInstance().clientID = FIRApp.defaultApp()?.options.clientID
 //        GIDSignIn.sharedInstance().delegate = self
+        
+        
         return true
     }
     

@@ -19,6 +19,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
+        checkIfUserIsLoggedIn()
         
         view.addSubview(tapInTitle)
         view.addSubview(emailText)
@@ -30,6 +31,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         view.addSubview(signUpButton)
         view.addSubview(resetText)
         view.addSubview(resetButton)
+        view.addSubview(barText)
+        view.addSubview(barButton)
         
         setUpFacebookButton()
         setUpEmailText()
@@ -41,6 +44,8 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         setupSignUpButton()
         setupResetText()
         setupResetButton()
+        setupBarText()
+        setupBarButton()
     }
     
     let tapInTitle: UILabel = {
@@ -54,7 +59,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     }()
     
     func setupTapInTitle() {
-                tapInTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        tapInTitle.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
         tapInTitle.topAnchor.constraint(equalTo: view.topAnchor, constant: 40).isActive = true
         
     }
@@ -62,6 +67,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     let emailText: UITextField = {
         let text = UITextField()
         text.translatesAutoresizingMaskIntoConstraints = false
+        text.keyboardType = .emailAddress
         text.backgroundColor = UIColor.lightGray
         text.textColor = UIColor.red
         text.placeholder = "Email"
@@ -157,7 +163,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
     func setupSignUpButton() {
         signUpButton.leftAnchor.constraint(equalTo: view.centerXAnchor, constant: 2.5).isActive = true
         signUpButton.bottomAnchor.constraint(equalTo: signUpText.bottomAnchor).isActive = true
-        signUpButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        signUpButton.heightAnchor.constraint(equalToConstant: 15).isActive = true
         signUpButton.widthAnchor.constraint(equalToConstant: 180).isActive = true
         signUpButton.addTarget(self, action: #selector(toSignUp), for: .touchUpInside)
     }
@@ -196,7 +202,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         resetButton.leftAnchor.constraint(equalTo: view.centerXAnchor, constant: 2.5).isActive = true
         resetButton.topAnchor.constraint(equalTo: resetText.topAnchor).isActive = true
         resetButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        resetButton.widthAnchor.constraint(equalToConstant: 240).isActive = true
+        resetButton.widthAnchor.constraint(equalToConstant: 180).isActive = true
         resetButton.addTarget(self, action: #selector(toReset), for: .touchUpInside)
     }
     
@@ -205,7 +211,43 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         self.present(resetVC, animated: true, completion: nil)
            }
 
+    let barText: UILabel = {
+        let t = UILabel()
+        t.translatesAutoresizingMaskIntoConstraints = false
+        t.text = "Looking for Bar Login?"
+        t.font = UIFont.preferredFont(forTextStyle: .footnote)
+        
+        return t
+    }()
     
+    func setupBarText() {
+        barText.rightAnchor.constraint(equalTo: view.centerXAnchor, constant: 2.5).isActive = true
+        barText.topAnchor.constraint(equalTo: tapInTitle.bottomAnchor, constant: 20).isActive = true
+    }
+    
+    let barButton: UIButton = {
+        let b = UIButton(type: .system)
+        b.translatesAutoresizingMaskIntoConstraints = false
+        b.backgroundColor = .white
+        b.setTitle("It's over here.", for: .normal)
+        b.setTitleColor(.blue, for: .normal)
+        b.titleLabel!.font = UIFont.preferredFont(forTextStyle: .footnote)
+        return b
+    }()
+    
+    func setupBarButton() {
+        barButton.leftAnchor.constraint(equalTo: view.centerXAnchor, constant: 2.5).isActive = true
+        barButton.topAnchor.constraint(equalTo: barText.topAnchor).isActive = true
+        barButton.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        barButton.widthAnchor.constraint(equalToConstant: 100).isActive = true
+        barButton.addTarget(self, action: #selector(toBar), for: .touchUpInside)
+    }
+    
+    func toBar() {
+        let resetVC = BarLoginController()
+        self.present(resetVC, animated: true, completion: nil)
+    }
+
     
 
     let fbButton = FBSDKLoginButton()
@@ -245,9 +287,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                 print("oops: ", error!)
             } else {
                 print("FIRAUTH Success with fb token: ", user ?? "")
-                let homeVC = HomeViewController()
-                self.present(homeVC, animated: true, completion: nil)
-                
+                self.presentHome()
             }
             
         })
@@ -263,6 +303,18 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
         }
         
         
+    }
+    
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser != nil {
+            self.presentHome()
+        }
+    }
+    
+    func presentHome() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let homeVC = storyboard.instantiateViewController(withIdentifier: "MainTab")
+        present(homeVC, animated: true, completion: nil)
     }
     
     func loginDo() {
@@ -284,9 +336,7 @@ class LoginViewController: UIViewController, FBSDKLoginButtonDelegate {
                         print("You're logged in!")
                         
                         //carries user to home page storyboard if there is no error
-                        let homeVC = self.storyboard!.instantiateViewController(withIdentifier: "Tab")
-                        self.present(homeVC, animated: true, completion: nil)
-                       
+                        self.presentHome()
                     } else {
                         //if there is an error, alert user (someone already is using their email).
                         let alertController = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: .alert)

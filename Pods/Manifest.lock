@@ -1,4 +1,5 @@
 PODS:
+  - Alamofire (4.5.0)
   - Bolts (1.8.4):
     - Bolts/AppLinks (= 1.8.4)
     - Bolts/Tasks (= 1.8.4)
@@ -69,14 +70,17 @@ PODS:
   - GTMSessionFetcher/Core (1.1.11)
   - GTMSessionFetcher/Full (1.1.11):
     - GTMSessionFetcher/Core (= 1.1.11)
+  - Stripe (11.2.0)
 
 DEPENDENCIES:
+  - Alamofire
   - FacebookCore
   - FacebookLogin (from `https://github.com/facebook/facebook-sdk-swift`)
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - GoogleSignIn
+  - Stripe
 
 EXTERNAL SOURCES:
   FacebookLogin:
@@ -88,6 +92,7 @@ CHECKOUT OPTIONS:
     :git: https://github.com/facebook/facebook-sdk-swift
 
 SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Bolts: 8a7995239dbe724f9cba2248b766d48b7ebdd322
   FacebookCore: 2cb3f0fbff218e9d3119cec84bae983b232412de
   FacebookLogin: da4d16833831769a6827a4ddfcf439d673949f12
@@ -107,7 +112,8 @@ SPEC CHECKSUMS:
   GoogleUtilities: 8bbc733218aad26306f9d4a253823986110e3358
   GTMOAuth2: 7fc9c10f5c745f4d9850419ea88889fe3baa6b7d
   GTMSessionFetcher: 5ad62e8200fa00ed011fe5e08d27fef72c5b1429
+  Stripe: 898f83a95d72180c6eb4acd65b2ae6158fc6a8bd
 
-PODFILE CHECKSUM: a1c08b562bd00fbe2e548582e0520f564ca20fd7
+PODFILE CHECKSUM: 1ba76bad9771dd2a1588e16c2b5e9dbb44c1aabc
 
 COCOAPODS: 1.2.1

@@ -1,0 +1,6 @@
+framework module Pods_TapIn {
+  umbrella header "Pods-TapIn-umbrella.h"
+
+  export *
+  module * { export * }
+}

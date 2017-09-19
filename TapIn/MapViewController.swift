@@ -8,6 +8,8 @@
 
 import UIKit
 import MapKit
+import Firebase
+import FBSDKLoginKit
 
 protocol HandleMapSearch {
     func dropPinZoomIn(placemark:MKPlacemark)
@@ -21,6 +23,8 @@ class MapViewController: UIViewController, MKMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //checkIfUserIsLoggedIn()
+        self.title = "Home"
         mapView.showsUserLocation = true
         mapView.delegate = self
         
@@ -41,6 +45,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         
         locationSearchTable.handleMapSearchDelegate = self
         
+        
+    }
+    
+    func checkIfUserIsLoggedIn() {
+        if FIRAuth.auth()?.currentUser == nil   {
+            self.present(LoginViewController(), animated: false, completion: nil)
+        }
         
     }
     
